@@ -22,7 +22,7 @@ console.log(maps([1, 2, 3]));
 function helloFunction(name) {
   return `Hello, ${name}`
 }
-console.log(sayHello("Mr. Dorji"))
+console.log(helloFunction("Mr. Dorji"))
 
 function calculateYears(principal, interest, tax, desired) {
   let years = 0;
@@ -35,4 +35,3 @@ function calculateYears(principal, interest, tax, desired) {
   return years;
 }
 console.log(calculateYears(1000, 0.05, 0.18, 1100));
-
