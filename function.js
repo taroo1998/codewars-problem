@@ -74,3 +74,13 @@ function basicOp(operation, value1, value2){
   return result;
 }
 console.log(basicOp("+", 4, 7))
+
+var countSheep = function (num){
+  if(!num) return ''
+let sheep="";
+  for(let i = 1; i <= num; i +=1){
+    sheep += i + ' sheep...'
+    }
+  return sheep;
+}
+console.log(countSheep(4));
