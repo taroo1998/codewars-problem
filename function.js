@@ -18,3 +18,9 @@ function maps(x){
 return result;
 }
 console.log(maps([1, 2, 3]));
+
+function helloFunction(name) {
+  return `Hello, ${name}`
+}
+console.log(sayHello("Mr. Dorji"))
+
