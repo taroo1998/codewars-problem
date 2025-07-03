@@ -116,3 +116,30 @@ function findDifference(a, b) {
   //loading...
 }
 console.log(findDifference([2,3,4],[4,5,6]))
+
+const quarterOf = (month) => {
+  let quater = month/3;
+  return Math.ceil(quater);
+}
+console.log(quarterOf(3));
+
+
+function past(h, m, s){
+  return (h * 3600 + m * 60 + s) * 1000;
+}
+console.log(past(0,1,1));
+
+
+function positiveSum(arr) {
+  let result= 0;
+  for (let i=0; i<arr.length; i++){
+    if(arr[i]>0) result += arr[i];
+  }
+  return result;
+}
+console.log(positiveSum([1,-2,3,4,5,6]))
+
+function removeChar(str){
+    return str.slice(1,str.length-1);
+};
+console.log(removeChar('eloquent'))
