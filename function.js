@@ -24,3 +24,15 @@ function helloFunction(name) {
 }
 console.log(sayHello("Mr. Dorji"))
 
+function calculateYears(principal, interest, tax, desired) {
+  let years = 0;
+  while (principal < desired) {
+    let yearlyInterest = principal * interest;
+    let taxPaid = yearlyInterest * tax;
+    principal += yearlyInterest - taxPaid;
+    years++;
+  }
+  return years;
+}
+console.log(calculateYears(1000, 0.05, 0.18, 1100));
+
