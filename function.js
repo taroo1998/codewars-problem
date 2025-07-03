@@ -22,7 +22,7 @@ console.log(maps([1, 2, 3]));
 function helloFunction(name) {
   return `Hello, ${name}`
 }
-console.log(sayHello("Mr. Dorji"))
+console.log(helloFunction("Mr. Dorji"))
 
 function calculateYears(principal, interest, tax, desired) {
   let years = 0;
@@ -36,3 +36,22 @@ function calculateYears(principal, interest, tax, desired) {
 }
 console.log(calculateYears(1000, 0.05, 0.18, 1100));
 
+var humanYearsCatYearsDogYears = function(humanYears) {
+ let dogYears=0;
+ let catYears=0;
+  
+  if(humanYears === 1){
+    dogYears=15;
+    catYears=15;
+    
+  }else if (humanYears === 2){
+    dogYears=24;
+    catYears=24;
+  }else{
+    dogYears = 24 + (humanYears -2)*5;
+    catYears = 24 + (humanYears - 2)*4;
+  }
+    
+  return [humanYears, catYears, dogYears];
+}
+console.log(humanYearsCatYearsDogYears(1));
