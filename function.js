@@ -55,3 +55,22 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   return [humanYears, catYears, dogYears];
 }
 console.log(humanYearsCatYearsDogYears(1));
+
+
+function basicOp(operation, value1, value2){
+  let result = 0;
+  if(operation === "+"){
+     result = value1 + value2;
+     }
+  if(operation === "-"){
+     result = value1 - value2;
+     }
+  if(operation === "*"){
+     result = value1 * value2;
+     }
+  if(operation === "/"){
+     result = value1 / value2;
+     }
+  return result;
+}
+console.log(basicOp("+", 4, 7))
