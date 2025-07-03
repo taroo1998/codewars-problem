@@ -10,7 +10,7 @@ function testEven(n) {
 }
 console.log(testEven(5));
 
-function sayHello(name) {
+function helloFunction(name) {
   return `Hello, ${name}`
 }
 console.log(sayHello("Mr. Dorji"))
